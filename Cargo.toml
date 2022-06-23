@@ -1,0 +1,19 @@
+[package]
+name = "mars_orbit"
+version = "0.1.0"
+edition = "2022"
+authors = "Jerahmie William Radder"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+ndarray = "0.15.4"
+numpy = "0.16.2"
+
+[dependencies.pyo3]
+version = "0.16.5"
+features = ["extension-module"]
+
